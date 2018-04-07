@@ -36,7 +36,7 @@ Benchmark.bmbm do |b|
 
     b.report("Quick Sort: ") do
         array = [2, 5, 3, 1, 4, 2, 0]
-        # quick_sort(array)
+        quick_sort(array)
     end
 
     b.report("Pancake Sort: ") do

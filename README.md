@@ -8,7 +8,7 @@
  - bubble_sort
  - merge_sort
  - heap_sort
- - quick_sort       - not implemented yet
+ - quick_sort
  - pancake_sort  - not implemented yet
 
 ## Usage

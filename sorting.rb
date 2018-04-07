@@ -103,7 +103,7 @@ module Sorting
       end
   end
 
-  def merge_sort(array, left=0, right=array.length-1)
+  def merge_sort(array, left = 0, right = array.length - 1)
       if left < right
           center = (left + right) / 2
           merge_sort(array, left, center)
@@ -150,7 +150,26 @@ module Sorting
       array = array.concat(sorted)
   end
 
-  def quick_sort(array)
-    # unimplemented
+  def partition(array, l, r)
+    i = l - 1
+    x = array[r]
+
+    for j in l...r
+        if array[j] < x 
+            i = i + 1
+            array[i], array[j] = array[j], array[i]
+        end
+    end
+
+    array[i + 1], array[r] = array[r], array[i + 1] 
+    return i + 1
+  end
+
+  def quick_sort(array, l = 0, r = array.length - 1)
+    if l < r
+      m = partition(array, l, r)
+      quick_sort(array, l, m - 1)
+      quick_sort(array, m + 1, r)
+    end
   end
 end

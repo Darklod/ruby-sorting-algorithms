@@ -14,7 +14,7 @@ puts
 # counting_sort(array)
 # merge_sort(array)
 # heap_sort(array)
-# quick_sort(array)    - not implemented yet
+# quick_sort(array)    
 # pancake_sort(array)  - not implemented yet
 
 print(array)
